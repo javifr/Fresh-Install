@@ -4,7 +4,7 @@ All my favourite applications and some basic configuration to get going on a new
 
 ## Step by Step
 
-- Download and run provision.sh ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh | sh``
+- Download and run provision.sh ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh | sh```
 - Execute the command ```defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder``` so I can see hidden files in Finder
 - Install manual software listed below
  
