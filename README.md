@@ -2,6 +2,8 @@
 
 All my favourite applications and some basic configuration to get going on a new computer.
 
+Check [this] in case you want to upgrade this whole things.
+
 ## Step by Step
 
 - Download and run provision.sh ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh | sh``
