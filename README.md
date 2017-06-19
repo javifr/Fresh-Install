@@ -2,12 +2,12 @@
 
 All my favourite applications and some basic configuration to get going on a new computer.
 
-Check [this] in case you want to upgrade this whole things.
+Check [this](https://github.com/Integralist/Fresh-Install/) in case you want to upgrade this whole things.
 
 ## Step by Step
 
-- Download and run provision.sh ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh >> ~/.laptop.local```
-- curl --remote-name https://raw.githubusercontent.com/jobtitude/laptop/master/mac | sh 2>&1 | tee ~/latop.log
+- Download custom apps ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh >> ~/.laptop.local```
+- Run work laptop script ```curl --remote-name https://raw.githubusercontent.com/jobtitude/laptop/master/mac | sh 2>&1 | tee ~/latop.log```
 - Execute the command ```defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder``` so I can see hidden files in Finder
 - Install manual software listed below
  

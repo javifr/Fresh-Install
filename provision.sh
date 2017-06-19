@@ -3,7 +3,10 @@ function install_xcode() {
 }
 
 function install_homebrew() {
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  # Check to see if Homebrew is installed, and install it if it is not
+  command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew Now"; \
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; }
+  # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 function install_brews() {
@@ -38,16 +41,9 @@ function install_app_store_software() {
    mas install 409737246 # Double Pane
 }
 
-function install_dotfiles() {
-  git clone git@github.com:javifr/dotfiles.git ~/dotfiles
-  cd ~/dotfiles && mv .*~.git ..
-  cd ~/ && rm -rf dotfiles
-}
-
 install_xcode && \
 install_homebrew && \
 install_brews && \
 install_software && \
 install_app_store_software && \
-# install_dotfiles && \
 echo "Hecho amigo! Muchas cosas listas para ti ;)"
