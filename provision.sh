@@ -2,7 +2,6 @@ function install_homebrew() {
   # Check to see if Homebrew is installed, and install it if it is not
   command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew Now"; \
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; }
-  # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 function install_brews() {
@@ -21,8 +20,8 @@ function install_software() {
   casks=( dropbox appcleaner vlc cleanmymac 1password \
           google-chrome firefox google-hangouts \
           sublime-text iterm2 pg-commander psequel mamp \
-          java arduino fritzing \
-          spotify keka filezilla calibre skype sitesucker sysex-librarian wine-stable splice bittorrent )
+          java arduino fritzing \
+          spotify keka filezilla calibre skype sitesucker sysex-librarian wine-stable splice )
 
   for item in "${casks[@]}"
   do
