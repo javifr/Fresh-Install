@@ -1,5 +1,7 @@
 function install_xcode() {
-  xcode-select --install
+  if xcode-select --install 2>&1 | grep installed; then
+    echo >&2 "X Code and comman line tools are already installed in this machine.";
+  fi
 }
 
 function install_homebrew() {
