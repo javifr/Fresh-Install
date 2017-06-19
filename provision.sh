@@ -1,9 +1,3 @@
-function install_xcode() {
-  if xcode-select --install 2>&1 | grep installed; then
-    echo >&2 "X Code and comman line tools are already installed in this machine.";
-  fi
-}
-
 function install_homebrew() {
   # Check to see if Homebrew is installed, and install it if it is not
   command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew Now"; \
@@ -15,20 +9,20 @@ function install_brews() {
   
   brew tap caskroom/cask
   
-  # brews=( )
+  brews=( mas )
 
-  # for item in "${brews[@]}"
-  # do
-  #   brew install $item
-  # done
+  for item in "${brews[@]}"
+  do
+    brew install $item
+  done
 }
 
 function install_software() {
   casks=( dropbox appcleaner vlc cleanmymac 1password \
           google-chrome firefox google-hangouts \
           sublime-text iterm2 pg-commander psequel mamp \
-          arduino fritzing \
-          spotify keka filezilla calibre skype sitesucker sysex-librarian wine-stable splice bit-torrent )
+          java arduino fritzing \
+          spotify keka filezilla calibre skype sitesucker sysex-librarian wine-stable splice bittorrent )
 
   for item in "${casks[@]}"
   do
@@ -44,7 +38,6 @@ function install_app_store_software() {
    mas install 409737246 # Double Pane
 }
 
-install_xcode && \
 install_homebrew && \
 install_brews && \
 install_software && \
