@@ -12,8 +12,9 @@ function install_homebrew() {
 }
 
 function install_brews() {
-  brew tap caskroom/homebrew-cask
-
+  
+  brew tap caskroom/cask
+  
   # brews=( )
 
   # for item in "${brews[@]}"
