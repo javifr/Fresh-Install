@@ -16,6 +16,7 @@ Check [this](https://github.com/Integralist/Fresh-Install/) in case you want to 
 
 - Adobe Photoshop
 - Microsoft Office
+- uTorrent
 
 ## Manual Music Software installation
 
