@@ -14,12 +14,12 @@ function install_homebrew() {
 function install_brews() {
   brew tap caskroom/homebrew-cask
 
-  brews=( )
+  # brews=( )
 
-  for item in "${brews[@]}"
-  do
-    brew install $item
-  done
+  # for item in "${brews[@]}"
+  # do
+  #   brew install $item
+  # done
 }
 
 function install_software() {
@@ -45,7 +45,7 @@ function install_app_store_software() {
 
 install_xcode && \
 install_homebrew && \
-# install_brews && \
+install_brews && \
 install_software && \
 install_app_store_software && \
 echo "Hecho amigo! Muchas cosas listas para ti ;)"
