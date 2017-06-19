@@ -7,7 +7,8 @@ Check [this](https://github.com/Integralist/Fresh-Install/) in case you want to 
 ## Step by Step
 
 - Download custom apps ```curl https://raw.githubusercontent.com/javifr/Fresh-Install/master/provision.sh >> ~/.laptop.local```
-- Run work laptop script ```curl --remote-name https://raw.githubusercontent.com/jobtitude/laptop/master/mac | sh 2>&1 | tee ~/latop.log```
+- Run work laptop script ```curl --remote-name https://raw.githubusercontent.com/jobtitude/laptop/master/mac >> ~/mac```
+- Execute ```sh ~/mac 2>&1 | tee ~/laptop.log`
 - Execute the command ```defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder``` so I can see hidden files in Finder
 - Install manual software listed below
  
