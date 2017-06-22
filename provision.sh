@@ -19,7 +19,7 @@ function install_brews() {
 function install_software() {
   casks=( dropbox appcleaner vlc cleanmymac 1password \
           google-chrome firefox google-hangouts \
-          sublime-text iterm2 pg-commander psequel mamp \
+          sublime-text iterm2 psequel mamp \
           java arduino fritzing \
           spotify keka filezilla calibre skype sitesucker sysex-librarian wine-stable splice )
 
